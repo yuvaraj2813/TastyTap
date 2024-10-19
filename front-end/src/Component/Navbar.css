@@ -1,0 +1,75 @@
+
+.navbar{
+    padding:20px 0px;
+    display:flex;                     /*allign item inside container  in    row or col*/
+    justify-content: space-between;   /*spaces apply inside the container items */
+    align-items: center;              /*align the items as center inside the container*/
+}
+.tastytap{
+    /* padding:auto;
+    font-size: 40px ;
+    color:rgb(240, 48, 14);
+    text-shadow: 1px 1px rgb(96, 34, 34);
+    font-weight: 700; */
+    margin: auto;
+	letter-spacing: 0.0015em;
+	font-size: 40px;
+	text-shadow: 0 1px #e6904e, -1px 0 #c0cbff, -1px 2px #8da1ff, -2px 1px #c0cbff,   /*$8da1ff*/
+		-2px 3px #e6904e, -3px 2px #c0cbff, -3px 4px #e6904e, -4px 3px #c0cbff,
+		-4px 5px #e6904e, -5px 4px #c0cbff, -5px 6px #e6904e, -6px 5px #c0cbff,
+		-6px 7px #e6904e, -7px 6px #c0cbff, -7px 8px #e6904e, -8px 7px #c0cbff;
+	text-align: center;
+    
+}
+.navbar .Logo{
+    width:150px;
+    height: auto;
+}
+.nav-menu{
+    display: flex;
+    list-style:none;
+    gap:20px;           /* gap take inside the ul */
+    color: #49557e;
+    font-size: 18px;
+    cursor:pointer;
+}
+.navbar-right{
+    display: flex;
+    gap:20px;
+    align-items: center;
+}
+.navbar button{
+    background: transparent;   /* background of button is transparent to background color */
+    font-size: 16px;
+    color:#49557e;
+    border: 1px solid tomato;
+    padding:10px 30px;
+    border-radius: 50px;
+    cursor:pointer;   
+    transition: 0.3s;          /* transition time while hover*/ 
+}
+.navbar button:hover{
+    background-color: #fff4f2;
+}
+
+.navbar .active{
+    padding-bottom:2px;
+    border-bottom: 2px solid  #49557e;
+}
+
+.navbar-search-icon{
+    position:relative;      /* adjust the position slightly without affecting the layout surrounding element- parent element*/
+}
+.navbar-search-icon .dot{
+    position:absolute;    /* child element inside the position:relative . it will position itself to the closest ancester(relative) */
+    min-width:10px;
+    min-height: 10px;
+    background-color: tomato;
+    border-radius: 5px  ;
+    top:-8px;
+    right:-8px;
+}
+a,Link{
+    text-decoration: none;
+    color:inherit;
+}
